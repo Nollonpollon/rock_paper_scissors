@@ -1,7 +1,10 @@
 let computerChoices = ["Rock", "Paper", "Scissor"];
 
 function getComputerChoice() {
-  console.log(
-    computerChoices[Math.floor(Math.random() * computerChoices.length)]
-  );
+  return computerChoices[Math.floor(Math.random() * computerChoices.length)];
 }
+
+let playerChoice = prompt("Select: Rock, Paper or Scissor").toLowerCase();
+
+console.log("Computer plays: " + getComputerChoice());
+console.log("Player plays: " + playerChoice);
